@@ -108,6 +108,8 @@ p {
   color: #2a2a2a;
 }
 
+
+
 /* 
 ---------------------------------------------
 global styles
@@ -115,11 +117,11 @@ global styles
 */
 html,
 body {
-  background: #fff;
+  background: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
 
-::selection {
+::selection {rgb(3, 3, 3)
   background: #2a2a2a;
   color: #fff;
 }
@@ -206,6 +208,24 @@ body {
 header
 --------------------------------------------- 
 */
+.main-button a {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 30px;
+  border-radius: 25px;
+  transition: all .3s;
+}
+
+.main-button a:hover {
+  background-color: #d49747;
+  color: #fff;
+}
+
 
 .background-header {
   border-bottom: none !important;
@@ -643,6 +663,36 @@ header
   }
 }
 
+/* Hero */
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/banner.png);
+  padding: 290px 0px 400px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .top-text {
+  text-align: center;
+}
+
+.banner .top-text h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.banner .top-text h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
 
 /* 
 ---------------------------------------------
@@ -652,7 +702,7 @@ banner
 
 .main-banner {
   border-bottom: 3px dotted #eee;
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 
@@ -946,6 +996,7 @@ Men
   border :1px solid #2a2a2a;
 }
 
+
 /* About */
 .featured .left-image {
   position: relative;
@@ -955,6 +1006,12 @@ Men
   padding-left: 55px;
   width: 355px;
   margin-bottom: 15px;
+}
+.featured .right-image img {
+  padding-left: 55px;
+  width: 540px;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 .featured .left-image a {
@@ -1032,6 +1089,7 @@ Men
   padding: 35px 30px;
 }
 
+
 .featured .info-table ul li {
   display: block;
   margin-bottom: 35px;
@@ -1061,7 +1119,42 @@ Men
   font-weight: 400;
 }
 
+/* mengapa */
+.featured .mengapa-table {
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); */
+  padding: 35px 30px;
+}
 
+
+.featured .mengapa-table ul li {
+  display: block;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #eee;
+}
+
+.featured .mengapa-table ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.featured .mengapa-table ul li img {
+  float: left;
+  margin-right: 25px;
+}
+
+.featured .mengapa-table ul li h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.featured .mengapa-table ul li h4 span {
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 400;
+}
 /*
 ---------------------------------------------
 Women
