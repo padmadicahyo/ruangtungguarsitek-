@@ -1003,15 +1003,16 @@ Men
 }
 
 .featured .left-image img {
-  padding-left: 55px;
+  /* padding-left: 55px; */
   width: 355px;
   margin-bottom: 15px;
 }
 .featured .right-image img {
-  padding-left: 55px;
+  /* padding-left: 55px; */
   width: 540px;
   margin-bottom: 15px;
   margin-top: 25px;
+  position: relative;
 }
 
 .featured .left-image a {
